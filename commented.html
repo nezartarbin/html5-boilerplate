@@ -1,0 +1,63 @@
+<!-- use standards mode instead of quirks mode (IE 5 and before) rendering -->
+<!DOCTYPE html>
+
+<!-- HTML document root. lang attribute important for accessibility, translation, etc. -->
+<html lang="en">
+
+  <!-- Element that contains document metadata -->
+  <head>
+
+  <!-- Defines character encoding. UTF-8 is standard. Avoids misinterpreting (usually non-english) characters -->
+  <meta charset="UTF-8">
+  <!-- For responsive design. "width=device-width" Tells browser to use device width instead of a virtual viewport (usually done by phones. -->
+  <!-- "initial-scale=1" tells browser not to zoom in or out upon loading -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <!-- Document title. Usually appears on browser tab, search engine results, bookmark title... -->
+
+  <title>[INSERT PAGE TITLE HERE]</title>
+  <!-- External CSS Stylesheet -->
+  <link ref="stylesheet" href="INSERT/PATH/TO/STYLE.css">
+  <!-- Page description. Usually used by search engine -->
+  <meta name="description" content="[INSERT DESCRIPTION HERE]">
+
+  <!-- below are Open Graph Protocol (OGP) meta tags denoted by "og:". They are primarily used by social media sites like Facebook and Twitter. -->
+  <!-- Required items by the OGP are denoted -->
+  <!-- og:title is page title, but used primarily by sites like Facebook and Twitter for link previews -->
+  <meta property="og:title" content="[INSERT PAGE TITLE HERE]"> 
+  <!-- og:description is page description, but used primarily by sites like Facebook and Twitter for link previews -->
+  <meta property="og:description" content="[INSERT DESCRIPTION HERE]">
+  <!-- Image shown as preview when page is shared on social media sites like Facebook and Twitter -->
+  <meta property="og:image" content="PATH/TO/PREVIEW.jpeg">
+  <!-- Alt text for preview image mentioned above -->
+  <meta property="og:image:alt" content="[INSERT IMAGE ALT TEXT]">
+  <!-- Optional - Define locale (language_region) -->
+  <meta property="og:locale" content="[INSERT LOCALE - example: 'en_US' OR 'ar_SY']">
+  <!-- Required - Type of media shared. subset of options: "website", "article", "video.movie", "music.album" ... -->
+  <meta property="og:type" content="[INSERT MEDIA TYPE. example: 'website']">
+  <!-- Required - Canonical URL -->
+  <meta property="og:url" content="https://www.mywebsite.com/page">
+
+  <!-- How card should look on twitter. Options: summary, summary_large_image -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- page theme color in CSS format. Some browsers use this to change UI color or customize display. Can have multiple -->
+  <meta name="theme-color" content="[INSERT COLOR IN CSS FORMAT. example: #FF069E]">
+
+  <!-- favicon: Icon that usually appears next to page title in browser tab -->
+  <link rel="icon" href="PATH/TO/fav.ico" type="[OPTIONAL TYPE]">
+
+  <!-- icon apple devices use if you add page to home menu -->
+  <link rel="apple-touch-icon" href="PATH/TO/apple-touch-icon.png">
+
+  <!-- link to .webmanifest file used by android browsers. It contains paths to home screen icons and splash screens for PWAs -->
+  <link rel="manifest" href="PATH/TO/manifest.webmanifest">
+
+  <!-- Link to JavaScript file -->
+  <script src="PATH/TO/script.js"></script>
+  </head>
+
+  <!-- Document body. Contains all elements to be rendered -->
+  <body> 
+
+  </body>
+</html>
